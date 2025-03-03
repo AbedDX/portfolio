@@ -1,0 +1,15 @@
+.footer {
+    width: 100vw;
+    height: 3rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: small;
+
+}
+
+
