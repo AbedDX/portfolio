@@ -12,4 +12,21 @@
 
 }
 
+.wave {
+    position: absolute;
+    width: 100%;
+    z-index: -3;
+    overflow: hidden;
+    line-height: 0;
+    right: 0;
+    left: 0;
+}
+
+footer p {
+    z-index: 3;
+    position: relative;
+    margin-top: 3rem;
+}
+
+
 

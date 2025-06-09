@@ -16,9 +16,10 @@
   position: sticky;
   top: 0;
   z-index: 3;
-  border-radius: var(--border-radius-medium);
-  backdrop-filter: blur(8px);
+  /*border-radius: var(--border-radius-medium); */
   user-select: none; /* Prevents text selection */
+  backdrop-filter: blur(2px);
+  
 }
 
 .logo {
@@ -132,6 +133,7 @@
   margin: 0.2rem;
   user-select: none;
   transition: background 0.3s ease-in-out;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add text shadow for glow effect */
 }
 
 .listItem:hover {
@@ -150,3 +152,4 @@
     display: none;
   }
 }
+

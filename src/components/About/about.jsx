@@ -1,6 +1,7 @@
 import React from "react";
 import "./about.css";
 import SkillCards from "./skillcards";
+import Wave from "react-wavify";
 
 const About = () => {
   return (
@@ -30,11 +31,31 @@ const About = () => {
           <SkillCards />
         </div>
         </div>
-
-        
-        
       </div>
+      <Wave
+        className="wave1"
+        fill="#121212"
+        paused={false}
+        options={{
+          height: 40,
+          amplitude: 50,
+          speed: 0.15,
+          points: 3,
+        }}
+      />
+      <Wave
+        className="wave2"
+        fill="rgba(0, 0, 0, 0.3)"
+        paused={false}
+        options={{
+          height: 30,
+          amplitude: 50,
+          speed: 0.15,
+          points: 3,
+        }}
+      />
     </section>
+
   );
 };
 

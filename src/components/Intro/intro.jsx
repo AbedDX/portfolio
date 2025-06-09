@@ -3,6 +3,7 @@ import KSlideshow from "../KSlidershow/KSlidershow";
 import profileImage from "../../assets/Abdalle.jpg";
 import "./intro.css";
 import { Link } from "react-scroll";
+import Wave from "react-wavify";
 
 const Intro = () => {
   useEffect(() => {
