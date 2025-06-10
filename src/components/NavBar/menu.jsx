@@ -18,7 +18,7 @@ const Menu = ({ showMenu, toggleMenu }) => {
       </label>
       <div
         className="navMenu"
-        style={{ backdropFilter: 'blur(8px)', display: showMenu ? "flex" : "none" }}
+        style={{  display: showMenu ? "flex" : "none" }}
       >
         <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={toggleMenu}>Home</Link>
         <Link activeClass="active" to="about" spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={toggleMenu}>About</Link>

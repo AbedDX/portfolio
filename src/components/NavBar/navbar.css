@@ -32,7 +32,6 @@
 .desktopMenuListItem {
   margin: 1rem;
   cursor: pointer;
-  user-select: none; /* Prevents text selection */
 }
 
 .desktopMenuListItem:hover {
@@ -68,6 +67,8 @@
 /* Hamburger Menu */
 .hamburger {
   cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .hamburger input {
@@ -124,6 +125,7 @@
   border-radius: 1rem;
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(8px);
+  user-select: none;
 }
 
 /* Apply backdrop filter to individual list items */
@@ -144,6 +146,7 @@
 @media screen and (max-width: 720px) {
   .mobileMenu {
     display: flex;
+    
   }
   .desktopMenu {
     display: none;
@@ -152,4 +155,3 @@
     display: none;
   }
 }
-
