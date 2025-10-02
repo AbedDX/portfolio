@@ -1,6 +1,6 @@
 .intro {
   height: calc(100vh - 3rem);
-  width: 100vw;
+  width: 100%;
   max-width: 75rem;
   margin: 0 auto;
   overflow: hidden;
@@ -9,11 +9,12 @@
   align-items: center;
   color: white;
   text-align: center;
-  padding-top: 20;
-
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .intro-content {
+  width: 90%;
   max-width: 600px;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.3);
@@ -23,38 +24,41 @@
   z-index: 1;
   color: #fff;
   text-align: center;
-  padding: 20px;
+  backdrop-filter: blur(5px);
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: 10px;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 3vw, 1.2rem);
   margin-bottom: 20px;
   opacity: 0.8;
 }
 
 .intro-button {
   display: inline-block;
-  padding: 12px 24px;
-  font-size: 1.2rem;
+  padding: clamp(10px, 2vw, 12px) clamp(16px, 3vw, 24px);
+  font-size: clamp(1rem, 2vw, 1.2rem);
   background: #ff6b6b;
   color: white;
   text-decoration: none;
   border-radius: 8px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .intro-button:hover {
   background: #ff4757;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .intro-profile {
-  width: 9rem;
-  height: 9rem;
+  width: clamp(7rem, 25vw, 9rem);
+  height: clamp(7rem, 25vw, 9rem);
   border-radius: 50%;
   border: 5px solid #ff6b6b;
   overflow: hidden;
@@ -86,29 +90,4 @@ p {
   background-position: center;
   background-repeat: no-repeat;
 }
-
-/* Animation */
-.intro-content {
-  animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Media Queries */
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-} 
 

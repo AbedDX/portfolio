@@ -1,21 +1,22 @@
-import Navbar from "./components/NavBar/navbar";
-import Intro from "./components/Intro/intro";
-import About from "./components/About/about";
-import Footer from "./components/Footer/footer";
-import Works from "./components/Works/works";
-
+import Navbar from './components/NavBar/navbar'
+import Intro from './components/Intro/intro'
+import About from './components/About/about'
+import Works from './components/Works/works'
+import Contact from './components/Contact/contact'
+import Blog from './components/Blog/blog'
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Navbar />
       <Intro />
       <About />
       <Works />
-      <Footer />
-      
-    </div>
-  );
+      <Blog />
+      <Contact />
+    </>
+  )
 }
 
-export default App;
+export default App

@@ -22,7 +22,8 @@ const Menu = ({ showMenu, toggleMenu }) => {
       >
         <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={toggleMenu}>Home</Link>
         <Link activeClass="active" to="about" spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={toggleMenu}>About</Link>
-        <Link activeClass="active" to="works" spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={toggleMenu}>Portfolio</Link>
+        <Link activeClass="active" to="works" spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={toggleMenu}>Projects</Link>
+        <Link activeClass="active" to="blog" spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={toggleMenu}>Blog</Link>
         <Link activeClass="active" to="contact" spy={true} smooth={true} offset={10} duration={500} className="listItem" onClick={toggleMenu}>Contact</Link>
       </div>
     </>

@@ -13,13 +13,17 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <img src={Logo} alt="Logo" className="logo" />
+      <div className="brand-container">
+        <img src={Logo} alt="Logo" className="logo" />
+        <span className="portfolio-title">Portfolio</span>
+      </div>
       
       {/* Desktop Menu */}
       <div className="desktopMenu">
         <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">Home</Link>
         <Link activeClass="active" to="about" spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">About</Link>
-        <Link activeClass="active" to="works" spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">Portfolio</Link>
+        <Link activeClass="active" to="works" spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">Projects</Link>
+        <Link activeClass="active" to="blog" spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">Blog</Link>
         <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">Contact</Link>
       </div>
 
