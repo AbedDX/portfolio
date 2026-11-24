@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import bgImg1 from "../../assets/sunset_view_city.jpg";
 import bgImg2 from "../../assets/boy_n_cat.jpg";
 import bgImg3 from "../../assets/art_picture.jpg";

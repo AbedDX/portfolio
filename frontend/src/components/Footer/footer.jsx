@@ -1,12 +1,20 @@
 import React from "react";
+import "../../App.css";
 import "./footer.css";
 
-const currentYear = new Date().getFullYear();
-
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
-      <p>&copy; {currentYear} AbedDX.</p>
+      <div className="footer-inner">
+        <p className="footer-text">
+          &copy; {currentYear} Abdalle Wais. All rights reserved.
+        </p>
+        <p className="footer-credits">
+          Built with React + Vite
+        </p>
+      </div>
     </footer>
   );
 };
